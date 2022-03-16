@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandhini Forms</title>
+</head>
+<body>
+    <button>Outside button</button>
+    <!--outside button from the form will not work-->
+    <h1>Designing sample form</h1>
+        <form action="/tacos">
+            <label for="username">enter the username:</label>
+            <input type="text" placeholder="Username" id="username" name="username"></br>
+        <p>
+            <label for="dob">enter the dob:</label>
+            <input type="date" placeholder="DOB" id="dob" name="dob">
+        </p>
+            <label for="resume">select your resume:</label>
+            <input type="file" placeholder="CV" id="resume" name="cv">
+        <p>
+            <label for="password">enter your password:</label>
+            <input type="password" placeholder="password" id="password" name=password>
+        </p>
+            <button type="button">submit</button>
+            <button type="submit">click me</button>
+            <input type="button" value="Touch me">  
+            <!--the above input method for submit is an another method-->
+        </form>
+<hr>
+    <h1>Serach Google</h1>
+        <form action="https://www.google.com/search">
+            <label for="search">Enter Your Search:</label><br>
+                <input type="text" name="q" id="search" placeholder="Search on Google">
+                <button>Click me</button>
+        </form>
+    <h1>Search Youtube</h1>
+        <form action="https://www.youtube.com/results">
+            <label for="video">If you want to watch video:</label><br>
+                <input type="text" id="video" placehoder="Search on Youtube" name="search_query">
+                <button>Click me</button>
+        </form>
+        <form action="website">
+            <input type="checkbox" id="button" name="select">
+            <label for="button">Agree to the above terms</label>
+            <button type="select">Submit</button>
+<hr>
+    <!--how to use radio button
+    In this radio button we only select only one item this can be achieved putting same name-->
+    <h2>Which branch are you from?</h2>
+        <label for="engineering1">CSE</label>
+        <input type="radio" id="engineering1" name="engineering" value="CSE" checked><br>
+        <!--value keyword is used to represent when we select any one input and it send to sever like enginnering=CSE and not engineering=on-->
+        <label for="engineering2">ECE</label>
+        <input type="radio" id="engineering2" name="engineering" value="ECE"><br>
+        <label for="engineering3">EEE</label>
+        <input type="radio" id="engineering3" name="engineering" value="EEE"><br>
+        <button>submit</button>
+<hr>
+
+    <label for="category">Select your Branch?</label>
+        <select name="brach" id="category">
+            <option value="">None</option>
+            <option value="ece" selected>ECE</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+        </select>
+<hr>
+
+    <label for="cheese">Adding cheesee level:</label>
+        <input type="range" id="cheese" name=level min="1" max="10" value="1">
+    <button>submit</button>
+<hr>
+    <label for="request">If you have any quieries.Please write below the text area!</label><br>
+    <textarea id="request" placeholder="Enter your text here" name="feedback" row="4" cols="50"></textarea>
+    <button type="submit">submit</button>
+<!-- select and textarea does not want inside the form and we als put into the form also its upto our choice-->
+    </form>      
+
+</form>
+<hr>
+<h2>Form Validation</h2>
+    <form action="google">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="user" minlength="5" maxlength="10" required>
+    </form>
+    
+</body>
+</html>
